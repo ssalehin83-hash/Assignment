@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const Navbar = () => {
@@ -16,12 +17,13 @@ const Navbar = () => {
        <li>My Plans</li>
       </ul>
     </div>
+    <Image src="/logo.png" alt="FITLOG Logo" width={30} height={30} />
     <a className="btn btn-ghost text-xl font-bold">FITLOG</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 gap-4">
-    <button className="btn btn-soft btn-success">Workouts</button>
-      <button className="btn btn-ghost">Ghost</button>
+    <button className="btn btn-soft bg-lime-400 text-black">Workouts</button>
+      <button className="btn btn-ghost">My Plans</button>
     </ul>
   </div>
   <div className="navbar-end">

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const LibraryCard = ({ card }) => {
   return (
-    <div className="group overflow-hidden rounded-2xl border border-gray-800 bg-[#17191f] shadow-lg transition duration-300 hover:-translate-y-2 hover:border-lime-400/50 hover:shadow-2xl">
+    <div className="py-7 group overflow-hidden rounded-2xl border border-gray-800 bg-[#17191f] shadow-lg transition duration-300 hover:-translate-y-2 hover:border-lime-400/50 hover:shadow-2xl">
 
       {/* Image */}
       <div className="relative h-56 w-full overflow-hidden">
