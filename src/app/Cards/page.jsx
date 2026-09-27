@@ -21,7 +21,7 @@ const Library = async () => {
             <p>Twelve lifts covering every major muscle group.</p>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 px-3">
-                {library.slice(0,8).map((item) => {
+                {library.map((item) => {
                     return (
                         <LibraryCard
                             key={item.id}

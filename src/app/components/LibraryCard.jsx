@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const LibraryCard = ({ card }) => {
   return (
@@ -96,9 +97,9 @@ const LibraryCard = ({ card }) => {
         </div>
 
         {/* Button */}
-        <button className="mt-5 w-full rounded-lg bg-lime-400 py-3 text-sm font-bold uppercase tracking-wide text-black transition hover:bg-lime-300">
-          View Workout
-        </button>
+      <Link href={`/Cards/${card.id}`} className="mt-5 block w-full rounded-lg bg-lime-400 px-4 py-2 text-center text-sm font-semibold text-black transition duration-300 hover:bg-lime-500">
+        View Workout
+      </Link>
 
       </div>
     </div>
