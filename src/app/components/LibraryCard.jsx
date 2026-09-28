@@ -97,7 +97,7 @@ const LibraryCard = ({ card }) => {
         </div>
 
         {/* Button */}
-      <Link href={`/Cards/${card.id}`} className="mt-5 block w-full rounded-lg bg-lime-400 px-4 py-2 text-center text-sm font-semibold text-black transition duration-300 hover:bg-lime-500">
+      <Link href={`/cards/${card.id}`} className="mt-5 block w-full rounded-lg bg-lime-400 px-4 py-2 text-center text-sm font-semibold text-black transition duration-300 hover:bg-lime-500">
         View Workout
       </Link>
 

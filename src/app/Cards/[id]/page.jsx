@@ -1,7 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { CalendarPlus, Bookmark } from 'lucide-react';
+import { Bookmark, CalendarPlus } from 'lucide-react';
+import PlanButton from '../../components/cardDetails/PlanButton';
+
 
 const getData = async () => {
     const res = await fetch("https://api.abcz.workers.dev/api/fitlog");
@@ -109,10 +111,7 @@ const DetailsPage = async ({ params }) => {
 
                     {/* Action Buttons */}
                     <div className="flex flex-wrap gap-4 mt-auto">
-                        <button className="flex items-center gap-2 bg-[#ccff00] hover:bg-[#b3e600] text-black font-bold text-sm px-6 py-3 rounded-md transition-colors">
-                            <CalendarPlus size={18} />
-                            Add to today's plan
-                        </button>
+                            <PlanButton card={item} />
                         
                         <button className="flex items-center gap-2 bg-transparent hover:bg-gray-900 text-white font-bold text-sm px-6 py-3 rounded-md border border-gray-700 transition-colors">
                             <Bookmark size={18} />

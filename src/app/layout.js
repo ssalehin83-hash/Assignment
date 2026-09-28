@@ -1,8 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import LibraryProvider from "../context/LibraryContext";
 
-import { Oswald } from "next/font/google";
+
 
 
 
@@ -28,9 +29,11 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col ">
+        <LibraryProvider>
        <Navbar></Navbar>
         {children}
         <h2></h2>
+        </LibraryProvider>
         </body>
     </html>
   );
